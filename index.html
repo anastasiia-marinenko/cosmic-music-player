@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Kaleidoscope Adventure</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="iframe-container">
+
+        <div class="music-control">
+            <button id="shuffle">
+                <img class="icon" id="shuffle-icon" src="images/music-icons/shuffle.png" alt="shuffle">
+            </button>
+
+            <button id="prev">
+                <img class="icon" id="prev-icon" src="images/music-icons/prev.png" alt="prev">
+            </button>
+
+            <button id="play">
+                <img class="icon" id="play-icon" src="images/music-icons/play.png" alt="play">
+            </button>
+
+            <button id="next">
+                <img class="icon" id="next-icon" src="images/music-icons/next.png" alt="next">
+            </button>
+
+            <button id="repeat">
+                <img class="icon" id="repeat-icon" src="images/music-icons/repeat.png" alt="repeat">
+            </button>
+
+            <img class="icon" id="volume-icon" src="images/music-icons/volume.png" alt="volume">
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.25">
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+            <div class="progress-circle" id="progress-circle"></div>
+        </div>
+
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGSsL2TkMA/2Bgoqm_5NEYNvap0jWShaA/view?embed"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="music-control.js"></script>
+</body>
+
+</html>
